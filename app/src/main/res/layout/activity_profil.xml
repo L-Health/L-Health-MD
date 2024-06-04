@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9F2F7"
+    tools:context=".MainActivity">
+
+    <!-- Gambar Profil -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="164dp"
+        android:layout_height="144dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_profile" />
+
+    <!-- Tombol Edit Gambar Profil -->
+    <ImageButton
+        android:id="@+id/editProfileImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/profileImage"
+        android:layout_alignBottom="@id/profileImage"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_edit" />
+
+    <!-- Nama Lengkap -->
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImage"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:hint="Nama Lengkap"
+        android:padding="16dp" />
+
+    <!-- Nama Panggilan -->
+    <EditText
+        android:id="@+id/nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fullName"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:hint="Nama Panggilan"
+        android:padding="16dp" />
+
+    <!-- Tanggal Lahir -->
+    <EditText
+        android:id="@+id/birthDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nickname"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:hint="Tanggal Lahir"
+        android:padding="16dp" />
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/birthDate"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:hint="Email"
+        android:padding="16dp" />
+
+    <!-- Nomor Telepon -->
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:hint="(+1) 724-848-1225"
+        android:padding="16dp" />
+
+    <!-- Jenis Kelamin -->
+    <Spinner
+        android:id="@+id/genderSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneNumber"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:padding="16dp" />
+
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genderSpinner"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:drawablePadding="16dp"
+        android:padding="16dp"
+        android:text="Lanjutkan"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

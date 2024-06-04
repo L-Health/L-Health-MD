@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">L-Health</string>
+    <string name="logo_description">L-Health Logo</string>
+    <string name="google_sign_in">Sign in with Google</string>
+    <string name="apple_sign_in">Sign in with Apple</string>
+    <string name="email_icon" />
+    <string name="sms_icon" />
+    <string name="back_button" />
+    <string name="password_icon" />
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F2F7FD"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="109dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="-30dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/back_button"
+        android:src="@drawable/ic_back_arrow" />
+
+    <TextView
+        android:id="@+id/pageIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="6/6"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pageIndicator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Makanan Apa Yang Akan Anda Makan Untuk Makan Malam?"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/judulJenisMakanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Makanan"
+        android:layout_below="@id/questionText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        android:textColor="#999" />
+
+    <LinearLayout
+        android:id="@+id/jenisMakananLayout"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judulJenisMakanan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/kuahButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:text="Kuah"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/gorengButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:text="Goreng"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/panggangButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:text="Panggang"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/judulRasaMakanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rasa Makanan"
+        android:layout_below="@id/jenisMakananLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        android:textColor="#999" />
+
+    <LinearLayout
+        android:id="@+id/rasaMakananLayout"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judulRasaMakanan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/pedasButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:text="Pedas"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/asinButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:text="Asin"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/gurihButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:text="Gurih"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="45dp"
+        android:backgroundTint="@color/black"
+        android:paddingVertical="16dp"
+        android:text="Lanjutkan"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

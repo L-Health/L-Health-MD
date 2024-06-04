@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9F2F7"
+    tools:context=".ForgotPasswordActivity">
+
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="109dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="-30dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/back_button"
+        android:src="@drawable/ic_back_arrow" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-44dp"
+        android:text="Lupa Kata Sandi"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Pilih detail kontak mana yang harus kami gunakan untuk mengatur ulang kata sandi Anda"
+        android:textColor="#7F7F7F"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/emailOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instructionText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <ImageView
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_marginEnd="5dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/sms_icon"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_sms" />
+
+        <TextView
+            android:layout_width="213dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="1dp"
+            android:scaleType="centerCrop"
+            android:text="Via Email\npriscilla.frank26@gmail.com"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/smsOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailOption"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <ImageView
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_marginEnd="5dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/sms_icon"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_sms" />
+
+
+        <TextView
+            android:layout_width="213dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="1dp"
+            android:scaleType="centerCrop"
+            android:text="Via SMS\n(+1) 480-894-5529"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/smsOption"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#007BFF"
+        android:drawableEnd="@drawable/ic_arrow_right"
+        android:drawablePadding="8dp"
+        android:text="Lanjutkan"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="edit_text_background" />
+    <drawable name="ic_email" />
+    <drawable name="ic_arrow_right" />
+    <drawable name="logo_png" />
+    <drawable name="ic_sunrise" />
+    <drawable name="ic_sun" />
+    <drawable name="ic_sunset" />
+    <drawable name="ic_exercise1" />
+    <drawable name="ic_exercise3" />
+</resources>

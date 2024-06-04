@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    android:background="#F2F7FD">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="109dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="-30dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/back_button"
+        android:src="@drawable/ic_back_arrow" />
+
+    <TextView
+        android:id="@+id/pageIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="3/6"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pageIndicator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:text="Apakah Anda Obesitas?"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionText"
+        android:layout_marginTop="88dp"
+        android:text="IMT adalah metode yang paling umum digunakan untuk menentukan obesitas. IMT dihitung dengan membagi berat badan (dalam kilogram) dengan tinggi badan (dalam meter) kuadrat."
+        android:textColor="#666"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/bmiCategoriesLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/descriptionText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Obesitas Kelas I: IMT 30 - 34.9"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Berat Badan Normal: IMT 18.5 - 24.9"
+            android:textSize="14sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Berat Badan Berlebih (Overweight): IMT 25 - 29.9"
+            android:textSize="14sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Obesitas Kelas II: IMT 35 - 39.9"
+            android:textSize="14sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Obesitas Kelas III (Obesitas Morbid): IMT ≥ 40"
+            android:textSize="14sp"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bmiCategoriesLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/yesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:text="Ya"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/noButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:text="Tidak"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="91dp"
+        android:backgroundTint="@color/black"
+        android:paddingVertical="16dp"
+        android:text="Lanjutkan"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
